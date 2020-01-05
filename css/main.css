@@ -2664,7 +2664,7 @@ body { -webkit-text-size-adjust: none; font-family: "Montserrat", sans-serif; fo
 
 .section-main .main-photo img { width: 100%; }
 
-.section-when { padding: 10rem 0; }
+.section-when { padding: 10rem 0; background: url(../img/secbg/bg2.jpg) no-repeat center center; -webkit-background-size: cover; background-size: cover; }
 
 .section-when .when-items { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 5rem; }
 
