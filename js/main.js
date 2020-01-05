@@ -74,6 +74,116 @@ $('.link--seo').on('click',  function(event) {
     });
 
   $('.phone').mask('+38 (000) 000-00-00');
+  var sliderReviews = new Swiper('.reviews-slider', {
+        speed: 800,
+        // effect: 'fade',
+        slidesPerView: 3,
+   //      fadeEffect: {
+	  //   crossFade: true
+	  // },
+        spaceBetween: 30,
+        // loop: true,
+        navigation: {
+            nextEl: '.reviews--next',
+            prevEl: '.reviews--prev',
+        },
+        pagination: {
+		    el: '.reviews-pagination',
+		    type: 'bullets',
+		    clickable: true,
+		  },
+        breakpoints: {
+            789: {
+                simulateTouch: true,
+                // spaceBetween: 15,
+                slidesPerView: 1,
+            },
+        },
+        on: {
+		    slideChange: function () {
+		      $('.all-box').find('.open').find('.paragraph').readmore('toggle')
+		    },
+		  }
+    });
+  var sliderHistory = new Swiper('.history-slider', {
+        speed: 800,
+        // effect: 'fade',
+        slidesPerView: 2,
+   //      fadeEffect: {
+	  //   crossFade: true
+	  // },
+        spaceBetween: 30,
+        // loop: true,
+        navigation: {
+            nextEl: '.history--next',
+            prevEl: '.history--prev',
+        },
+        pagination: {
+		    el: '.history-pagination',
+		    type: 'bullets',
+		    clickable: true,
+		  },
+        breakpoints: {
+            789: {
+                simulateTouch: true,
+                // spaceBetween: 15,
+                slidesPerView: 1,
+            },
+        },
+        on: {
+		    slideChange: function () {
+		      $('.all-box').find('.open').find('.paragraph').readmore('toggle')
+		    },
+		  }
+    });
+
+
+$('.paragraph--two').readmore({
+	  speed: 75,
+	  collapsedHeight: 290,
+	  embedCSS: false,
+	  moreLink: '<a href="#" class="link link--show">Читать дальше <img src="img/arrow.png" alt="arrow"></a>',
+	  lessLink: '<a href="#" class="link link--hide">Спрятать <img src="img/arrow.png" alt="arrow"></a>',
+	  beforeToggle: function(trigger, element, expanded) {
+	    if(! expanded) {
+	    	$(element).parents('.all-box__em').addClass('open')
+	    } else {
+
+	    }
+  		},
+	  afterToggle: function(trigger, element, expanded) {
+	  	if(! expanded) {
+		    	$(element).parents('.all-box__em').removeClass('open')
+		    }
+	  }
+});
+
+$('.paragraph--one').readmore({
+	  speed: 75,
+	  collapsedHeight: 115,
+	  embedCSS: false,
+	  moreLink: '<a href="#" class="link link--show">Читать дальше <img src="img/arrow.png" alt="arrow"></a>',
+	  lessLink: '<a href="#" class="link link--hide">Спрятать <img src="img/arrow.png" alt="arrow"></a>',
+	  beforeToggle: function(trigger, element, expanded) {
+	    if(! expanded) {
+	    	$(element).parents('.all-box__em').addClass('open')
+	    } else {
+
+	    }
+  		},
+	  afterToggle: function(trigger, element, expanded) {
+	  	if(! expanded) {
+		    	$(element).parents('.all-box__em').removeClass('open')
+		    }
+	  }
+});
+
+$(document).on('click', '.link--show', function(event) {
+	event.preventDefault();
+	// /* Act on the event */.readmore('toggle')
+	$('.all-box').find('.open').find('.paragraph').readmore('toggle')
+	// $readmore
+});
 
   $('.form').submit(function(event) {
         var _form = $(this);
