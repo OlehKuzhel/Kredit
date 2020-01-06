@@ -156,6 +156,7 @@ $('.link--seo').on('click',  function(event) {
         // effect: 'fade',
         slidesPerView: 3,
    //      fadeEffect: {
+   	loop: true,
 	  //   crossFade: true
 	  // },
         spaceBetween: 30,
@@ -185,6 +186,7 @@ $('.link--seo').on('click',  function(event) {
 
   var sliderHistory = new Swiper('.history-slider', {
         speed: 800,
+        	loop: true,
         // effect: 'fade',
         slidesPerView: 2,
    //      fadeEffect: {
