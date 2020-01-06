@@ -33,9 +33,86 @@ $(document).ready(function($) {
    
 
 if (isMobile == false) {
-        
+        $('.paragraph--two').readmore({
+	  speed: 75,
+	  collapsedHeight: 290,
+	  embedCSS: false,
+	  moreLink: '<a href="#" class="link link--show">Читать дальше <img src="img/arrow.png" alt="arrow"></a>',
+	  lessLink: '<a href="#" class="link link--hide">Спрятать <img src="img/arrow.png" alt="arrow"></a>',
+	  beforeToggle: function(trigger, element, expanded) {
+	    if(! expanded) {
+	    	$(element).parents('.all-box__em').addClass('open')
+	    } else {
+
+	    }
+  		},
+	  afterToggle: function(trigger, element, expanded) {
+	  	if(! expanded) {
+		    	$(element).parents('.all-box__em').removeClass('open')
+		    }
+	  }
+});
+
+$('.paragraph--one').readmore({
+	  speed: 75,
+	  collapsedHeight: 115,
+	  embedCSS: false,
+	  moreLink: '<a href="#" class="link link--show">Читать дальше <img src="img/arrow.png" alt="arrow"></a>',
+	  lessLink: '<a href="#" class="link link--hide">Спрятать <img src="img/arrow.png" alt="arrow"></a>',
+	  beforeToggle: function(trigger, element, expanded) {
+	    if(! expanded) {
+	    	$(element).parents('.all-box__em').addClass('open')
+	    } else {
+
+	    }
+  		},
+	  afterToggle: function(trigger, element, expanded) {
+	  	if(! expanded) {
+		    	$(element).parents('.all-box__em').removeClass('open')
+		    }
+	  }
+});
 
    } else {
+   	$('.paragraph--two').readmore({
+	  speed: 75,
+	  collapsedHeight: 110,
+	  embedCSS: false,
+	  moreLink: '<a href="#" class="link link--show">Читать дальше <img src="img/arrow.png" alt="arrow"></a>',
+	  lessLink: '<a href="#" class="link link--hide">Спрятать <img src="img/arrow.png" alt="arrow"></a>',
+	  beforeToggle: function(trigger, element, expanded) {
+	    if(! expanded) {
+	    	$(element).parents('.all-box__em').addClass('open')
+	    } else {
+
+	    }
+  		},
+	  afterToggle: function(trigger, element, expanded) {
+	  	if(! expanded) {
+		    	$(element).parents('.all-box__em').removeClass('open')
+		    }
+	  }
+});
+
+$('.paragraph--one').readmore({
+	  speed: 75,
+	  collapsedHeight: 110,
+	  embedCSS: false,
+	  moreLink: '<a href="#" class="link link--show">Читать дальше <img src="img/arrow.png" alt="arrow"></a>',
+	  lessLink: '<a href="#" class="link link--hide">Спрятать <img src="img/arrow.png" alt="arrow"></a>',
+	  beforeToggle: function(trigger, element, expanded) {
+	    if(! expanded) {
+	    	$(element).parents('.all-box__em').addClass('open')
+	    } else {
+
+	    }
+  		},
+	  afterToggle: function(trigger, element, expanded) {
+	  	if(! expanded) {
+		    	$(element).parents('.all-box__em').removeClass('open')
+		    }
+	  }
+});
 
    		$('.cut-photo').appendTo('.cut-content')
    }
@@ -139,45 +216,7 @@ $('.link--seo').on('click',  function(event) {
     });
 
 
-$('.paragraph--two').readmore({
-	  speed: 75,
-	  collapsedHeight: 290,
-	  embedCSS: false,
-	  moreLink: '<a href="#" class="link link--show">Читать дальше <img src="img/arrow.png" alt="arrow"></a>',
-	  lessLink: '<a href="#" class="link link--hide">Спрятать <img src="img/arrow.png" alt="arrow"></a>',
-	  beforeToggle: function(trigger, element, expanded) {
-	    if(! expanded) {
-	    	$(element).parents('.all-box__em').addClass('open')
-	    } else {
 
-	    }
-  		},
-	  afterToggle: function(trigger, element, expanded) {
-	  	if(! expanded) {
-		    	$(element).parents('.all-box__em').removeClass('open')
-		    }
-	  }
-});
-
-$('.paragraph--one').readmore({
-	  speed: 75,
-	  collapsedHeight: 115,
-	  embedCSS: false,
-	  moreLink: '<a href="#" class="link link--show">Читать дальше <img src="img/arrow.png" alt="arrow"></a>',
-	  lessLink: '<a href="#" class="link link--hide">Спрятать <img src="img/arrow.png" alt="arrow"></a>',
-	  beforeToggle: function(trigger, element, expanded) {
-	    if(! expanded) {
-	    	$(element).parents('.all-box__em').addClass('open')
-	    } else {
-
-	    }
-  		},
-	  afterToggle: function(trigger, element, expanded) {
-	  	if(! expanded) {
-		    	$(element).parents('.all-box__em').removeClass('open')
-		    }
-	  }
-});
 
 $(document).on('click', '.link--show', function(event) {
 	event.preventDefault();
