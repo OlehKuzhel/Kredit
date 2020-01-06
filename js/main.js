@@ -37,7 +37,7 @@ if (isMobile == false) {
 
    } else {
 
-
+   		$('.cut-photo').appendTo('.cut-content')
    }
 
 $('.link--seo').on('click',  function(event) {
@@ -105,6 +105,7 @@ $('.link--seo').on('click',  function(event) {
 		    },
 		  }
     });
+
   var sliderHistory = new Swiper('.history-slider', {
         speed: 800,
         // effect: 'fade',

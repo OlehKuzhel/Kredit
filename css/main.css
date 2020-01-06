@@ -2558,6 +2558,10 @@ body { -webkit-text-size-adjust: none; font-family: "Montserrat", sans-serif; fo
 
 .link--logo img { width: 100%; }
 
+.link--logo .logo-mobile { display: none; }
+
+.link--logo .logo-desk { display: block; }
+
 .link--fresh { max-width: 16.4rem; width: 100%; }
 
 .link--fresh img { width: 100%; }
@@ -2624,7 +2628,7 @@ body { -webkit-text-size-adjust: none; font-family: "Montserrat", sans-serif; fo
 
 .jq-selectbox__select:hover { -webkit-box-shadow: none; box-shadow: none; background: #fff; }
 
-.jq-selectbox__select-text.placeholder { color: rgba(35, 35, 35, 0.6); font-size: 1.4rem; }
+.jq-selectbox__select-text.placeholder { text-shadow: none; color: rgba(35, 35, 35, 0.6); font-size: 1.4rem; }
 
 .field { -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; border: none; padding: .75rem 4px .75rem 4px; outline: none; -o-text-overflow: ellipsis; text-overflow: ellipsis; font-family: "Montserrat", sans-serif; width: 100%; color: #000000; font-size: 1rem; -webkit-appearance: none; -webkit-border-radius: 0; border-radius: 0; font-weight: 400; background-color: #fff; }
 
