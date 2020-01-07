@@ -244,6 +244,7 @@ $(document).on('click', '.link--show', function(event) {
 
                 setTimeout(function() {
                     _form.trigger("reset");
+                    _form.find('select').trigger("refresh");
                     _form.find('.form-thanks').removeClass('show')
                     _form.find('.form-box').removeClass('hide')
             		
