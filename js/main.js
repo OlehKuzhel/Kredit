@@ -151,6 +151,8 @@ $('.link--seo').on('click',  function(event) {
     });
 
   $('.phone').mask('+38 (000) 000-00-00');
+  $('.field--numb').mask('00000000000')
+  $('.field--age').mask('000')
   var sliderReviews = new Swiper('.reviews-slider', {
         speed: 800,
         // effect: 'fade',
@@ -236,10 +238,16 @@ $(document).on('click', '.link--show', function(event) {
             url: form_url,
             data: th,
             success: function(data) {
-            	
+
+            	_form.find('.form-box').addClass('hide')
+            	_form.find('.form-thanks').addClass('show')
+
                 setTimeout(function() {
                     _form.trigger("reset");
-                }, 3000);
+                    _form.find('.form-thanks').removeClass('show')
+                    _form.find('.form-box').removeClass('hide')
+            		
+                }, 5000);
             }
         });
         event.preventDefault();

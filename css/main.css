@@ -2592,7 +2592,21 @@ body { -webkit-text-size-adjust: none; font-family: "Montserrat", sans-serif; fo
 
 .btn--faq.no { pointer-events: none; }
 
-.form { -webkit-border-radius: 1rem; border-radius: 1rem; border: 0.1rem solid #ffffff; background: rgba(0, 0, 0, 0.3); max-width: 45rem; width: 100%; padding: 3rem; }
+.form { -webkit-border-radius: 1rem; border-radius: 1rem; border: 0.1rem solid #ffffff; background: rgba(0, 0, 0, 0.3); max-width: 45rem; width: 100%; padding: 3rem; position: relative; }
+
+.form-box { -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; width: 100%; }
+
+.form-box.hide { z-index: -1; opacity: 0; }
+
+.form-thanks { position: absolute; top: 0; left: 0; opacity: 0; z-index: -1; visibility: hidden; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; width: 100%; text-align: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; height: 100%; }
+
+.form-thanks.show { visibility: visible; opacity: 1; z-index: 3; }
+
+.form-thanks h4 { font-size: 2.4rem; font-weight: 700; position: relative; color: #ffffff; padding-bottom: 1.8rem; margin-bottom: 2rem; }
+
+.form-thanks h4:after { position: absolute; bottom: 0; content: ''; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); -webkit-border-radius: 2px; border-radius: 2px; background: #8dc63f; height: 3px; width: 6.5rem; }
+
+.form-thanks p { color: #ffffff; font-size: 2.4rem; font-weight: 400; line-height: 3.4rem; }
 
 .form-row { margin-bottom: 1rem; width: 100%; position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 

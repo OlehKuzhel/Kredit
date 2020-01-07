@@ -21,7 +21,7 @@
             <div class="header">
                <a href="/" class="link link--logo">
                <img src="img/logo.png" alt="logo" class="logo-desk">
-                  <img src="img/logo-mobile.png" alt="logom" class="logo-mobile">
+               <img src="img/logo-mobile.png" alt="logom" class="logo-mobile">
                </a>
                <div class="header-phone">
                   <div class="header-phone__icon">
@@ -49,37 +49,44 @@
                      <h2 class="subtitle">Хватит переплачивать - рефинансируйте, мы поможем!</h2>
                   </div>
                   <div class="main-content__form">
-                     <form class="form">
+                     <form class="form" action="https://andriivskiy-credit.com.ua/send_email" method="post">
+                        <div class="form-box">
+                        <input type="hidden" value="Uaib2QZ0PiBTA8bIjWPwQIcLWVetZye3VT0LLnS7" name="_token">
                         <p class="paragraph paragraph--form">
                            Заполните заявку
                         </p>
-                        <input type="hidden" name="formname" value="Напишешь тут нужные названия для форм">
+                        <input type="hidden" name="formname" value="4">
                         <div class="form-row">
-                           <select name="to" required data-placeholder="Я хочу рефинансировать свои кредиты в">
+                           <select name="wishes" data-placeholder="Я хочу рефинансировать свои кредиты в">
                               <option></option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
+                              <option value="Себе в карман">Себе в карман</option>
+                              <option value="Васе в карман">Васе в карман</option>
                            </select>
                         </div>
                         <div class="form-row">
-                           <select name="pay" required data-placeholder="Они оплачиваются" >
+                           <select name="they_pay" required data-placeholder="Они оплачиваются" >
                               <option></option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
+                              <option value="Наличными">Наличными</option>
+                              <option value="Безналом">Безналом</option>
                            </select>
                         </div>
                         <div class="form-row">
-                           <input name="summ" required type="text" class="field field--ex" placeholder="Необходимая мне сумма, грн">
+                           <input name="req_price" required type="text" class="field field--ex field--numb" min="1000" max="2000" placeholder="Необходимая мне сумма, грн">
                         </div>
                         <div class="form-row">
-                           <input name="age" required type="text" class="field field--ex" placeholder="Мой возраст, лет">
+                           <input name="age" required type="text" class="field field--ex field--age" min="18" max="100" placeholder="Мой возраст, лет">
                            <input name="phone" required type="tel" class="field field--ex phone" placeholder="Мой телефон">
                         </div>
-                        <button type="submit" class="btn btn--action">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        <button type="submit" class="btn btn--action">Отправить запрос</button>
+                        </div>
+                        <div class="form-thanks">
+                           <h4 class="title title--thanks">
+                              Спасибо за обращение!
+                           </h4>
+                           <p class="paragraph paragraph--thanks">
+                              Мы свяжемся с Вами <br> в ближайшее время!
+                           </p>
+                        </div>
                      </form>
                   </div>
                </div>
@@ -169,37 +176,44 @@
                      <img src="img/save.png" alt="save">
                   </div>
                   <div class="action-form">
-                     <form class="form">
+                     <form class="form" action="https://andriivskiy-credit.com.ua/send_email" method="post">
+                        <div class="form-box">
+                        <input type="hidden" value="Uaib2QZ0PiBTA8bIjWPwQIcLWVetZye3VT0LLnS7" name="_token">
                         <p class="paragraph paragraph--form">
                            Заполните заявку
                         </p>
-                        <input type="hidden" name="formname" value="Напишешь тут нужные названия для форм">
+                        <input type="hidden" name="formname" value="5">
                         <div class="form-row">
-                           <select name="to" data-placeholder="Я хочу рефинансировать свои кредиты в">
+                           <select name="wishes" data-placeholder="Я хочу рефинансировать свои кредиты в">
                               <option></option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
+                              <option value="Себе в карман">Себе в карман</option>
+                              <option value="Васе в карман">Васе в карман</option>
                            </select>
                         </div>
                         <div class="form-row">
-                           <select name="pay" data-placeholder="Они оплачиваются" >
+                           <select name="they_pay" required data-placeholder="Они оплачиваются" >
                               <option></option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
+                              <option value="Наличными">Наличными</option>
+                              <option value="Безналом">Безналом</option>
                            </select>
                         </div>
                         <div class="form-row">
-                           <input name="summ" type="text" class="field field--ex" placeholder="Необходимая мне сумма, грн">
+                           <input name="req_price" required type="text" class="field field--ex field--numb" min="1000" max="2000" placeholder="Необходимая мне сумма, грн">
                         </div>
                         <div class="form-row">
-                           <input name="age" type="text" class="field field--ex" placeholder="Мой возраст, лет">
-                           <input name="phone" type="text" class="field field--ex phone" placeholder="Мой телефон">
+                           <input name="age" required type="text" class="field field--ex field--age" min="18" max="100" placeholder="Мой возраст, лет">
+                           <input name="phone" required type="tel" class="field field--ex phone" placeholder="Мой телефон">
                         </div>
-                        <button type="submit" class="btn btn--action">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        <button type="submit" class="btn btn--action">Отправить запрос</button>
+                        </div>
+                        <div class="form-thanks">
+                           <h4 class="title title--thanks">
+                              Спасибо за обращение!
+                           </h4>
+                           <p class="paragraph paragraph--thanks">
+                              Мы свяжемся с Вами <br> в ближайшее время!
+                           </p>
+                        </div>
                      </form>
                   </div>
                </div>
@@ -320,38 +334,45 @@
          <div class="wrapper">
             <div class="stop">
                <div class="stop-form">
-                  <form class="form">
-                     <p class="paragraph paragraph--form">
-                        Заполните заявку
-                     </p>
-                     <input type="hidden" name="formname" value="Напишешь тут нужные названия для форм">
-                     <div class="form-row">
-                        <select name="to" data-placeholder="Я хочу рефинансировать свои кредиты в">
-                           <option></option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                        </select>
-                     </div>
-                     <div class="form-row">
-                        <select name="pay" data-placeholder="Они оплачиваются" >
-                           <option></option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                        </select>
-                     </div>
-                     <div class="form-row">
-                        <input name="summ" type="text" class="field field--ex" placeholder="Необходимая мне сумма, грн">
-                     </div>
-                     <div class="form-row">
-                        <input name="age" type="text" class="field field--ex" placeholder="Мой возраст, лет">
-                        <input name="phone" type="text" class="field field--ex phone" placeholder="Мой телефон">
-                     </div>
-                     <button type="submit" class="btn btn--action">ОТПРАВИТЬ ЗАЯВКУ</button>
-                  </form>
+                  <form class="form" action="https://andriivskiy-credit.com.ua/send_email" method="post">
+                        <div class="form-box">
+                        <input type="hidden" value="Uaib2QZ0PiBTA8bIjWPwQIcLWVetZye3VT0LLnS7" name="_token">
+                        <p class="paragraph paragraph--form">
+                           Заполните заявку
+                        </p>
+                        <input type="hidden" name="formname" value="5">
+                        <div class="form-row">
+                           <select name="wishes" data-placeholder="Я хочу рефинансировать свои кредиты в">
+                              <option></option>
+                              <option value="Себе в карман">Себе в карман</option>
+                              <option value="Васе в карман">Васе в карман</option>
+                           </select>
+                        </div>
+                        <div class="form-row">
+                           <select name="they_pay" required data-placeholder="Они оплачиваются" >
+                              <option></option>
+                              <option value="Наличными">Наличными</option>
+                              <option value="Безналом">Безналом</option>
+                           </select>
+                        </div>
+                        <div class="form-row">
+                           <input name="req_price" required type="text" class="field field--ex field--numb" min="1000" max="2000" placeholder="Необходимая мне сумма, грн">
+                        </div>
+                        <div class="form-row">
+                           <input name="age" required type="text" class="field field--ex field--age" min="18" max="100" placeholder="Мой возраст, лет">
+                           <input name="phone" required type="tel" class="field field--ex phone" placeholder="Мой телефон">
+                        </div>
+                        <button type="submit" class="btn btn--action">Отправить запрос</button>
+                        </div>
+                        <div class="form-thanks">
+                           <h4 class="title title--thanks">
+                              Спасибо за обращение!
+                           </h4>
+                           <p class="paragraph paragraph--thanks">
+                              Мы свяжемся с Вами <br> в ближайшее время!
+                           </p>
+                        </div>
+                     </form>
                </div>
                <div class="stop-content">
                   <div class="section-title">
@@ -530,7 +551,6 @@
                            </div>
                         </div>
                      </div>
-                     
                   </div>
                   <div class="history-pagination swiper-pagination"></div>
                </div>
@@ -551,37 +571,44 @@
                      не выбрасывайте деньги на ветер.
                   </p>
                   <div class="cut-form">
-                     <form class="form">
+                     <form class="form" action="https://andriivskiy-credit.com.ua/send_email" method="post">
+                        <div class="form-box">
+                        <input type="hidden" value="Uaib2QZ0PiBTA8bIjWPwQIcLWVetZye3VT0LLnS7" name="_token">
                         <p class="paragraph paragraph--form">
                            Заполните заявку
                         </p>
-                        <input type="hidden" name="formname" value="Напишешь тут нужные названия для форм">
+                        <input type="hidden" name="formname" value="5">
                         <div class="form-row">
-                           <select name="to" data-placeholder="Я хочу рефинансировать свои кредиты в">
+                           <select name="wishes" data-placeholder="Я хочу рефинансировать свои кредиты в">
                               <option></option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
+                              <option value="Себе в карман">Себе в карман</option>
+                              <option value="Васе в карман">Васе в карман</option>
                            </select>
                         </div>
                         <div class="form-row">
-                           <select name="pay" data-placeholder="Они оплачиваются" >
+                           <select name="they_pay" required data-placeholder="Они оплачиваются" >
                               <option></option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
+                              <option value="Наличными">Наличными</option>
+                              <option value="Безналом">Безналом</option>
                            </select>
                         </div>
                         <div class="form-row">
-                           <input name="summ" type="text" class="field field--ex" placeholder="Необходимая мне сумма, грн">
+                           <input name="req_price" required type="text" class="field field--ex field--numb" min="1000" max="2000" placeholder="Необходимая мне сумма, грн">
                         </div>
                         <div class="form-row">
-                           <input name="age" type="text" class="field field--ex" placeholder="Мой возраст, лет">
-                           <input name="phone" type="text" class="field field--ex phone" placeholder="Мой телефон">
+                           <input name="age" required type="text" class="field field--ex field--age" min="18" max="100" placeholder="Мой возраст, лет">
+                           <input name="phone" required type="tel" class="field field--ex phone" placeholder="Мой телефон">
                         </div>
-                        <button type="submit" class="btn btn--action">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        <button type="submit" class="btn btn--action">Отправить запрос</button>
+                        </div>
+                        <div class="form-thanks">
+                           <h4 class="title title--thanks">
+                              Спасибо за обращение!
+                           </h4>
+                           <p class="paragraph paragraph--thanks">
+                              Мы свяжемся с Вами <br> в ближайшее время!
+                           </p>
+                        </div>
                      </form>
                   </div>
                </div>
@@ -596,10 +623,10 @@
             <div class="reviews">
                <div class="reviews-head">
                   <div class="section-title af">
-                  <h2 class="title title--section c1 ta-l">
-                     Отзывы наших клиентов
-                  </h2>
-               </div>
+                     <h2 class="title title--section c1 ta-l">
+                        Отзывы наших клиентов
+                     </h2>
+                  </div>
                   <div class="arrows">
                      <a href="#" class="link link--nav reviews--prev">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.004 400.004">
@@ -737,11 +764,9 @@
                            </div>
                         </div>
                      </div>
-                     
                   </div>
                   <div class="reviews-pagination swiper-pagination"></div>
                </div>
-               
             </div>
          </div>
       </section>
@@ -758,37 +783,44 @@
                      <img src="img/not.png" alt="not">
                   </div>
                   <div class="low-form">
-                     <form class="form">
+                     <form class="form" action="https://andriivskiy-credit.com.ua/send_email" method="post">
+                        <div class="form-box">
+                        <input type="hidden" value="Uaib2QZ0PiBTA8bIjWPwQIcLWVetZye3VT0LLnS7" name="_token">
                         <p class="paragraph paragraph--form">
                            Заполните заявку
                         </p>
-                        <input type="hidden" name="formname" value="Напишешь тут нужные названия для форм">
+                        <input type="hidden" name="formname" value="5">
                         <div class="form-row">
-                           <select name="to" data-placeholder="Я хочу рефинансировать свои кредиты в">
+                           <select name="wishes" data-placeholder="Я хочу рефинансировать свои кредиты в">
                               <option></option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
+                              <option value="Себе в карман">Себе в карман</option>
+                              <option value="Васе в карман">Васе в карман</option>
                            </select>
                         </div>
                         <div class="form-row">
-                           <select name="pay" data-placeholder="Они оплачиваются" >
+                           <select name="they_pay" required data-placeholder="Они оплачиваются" >
                               <option></option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
-                              <option value="Поставишь">Пример</option>
+                              <option value="Наличными">Наличными</option>
+                              <option value="Безналом">Безналом</option>
                            </select>
                         </div>
                         <div class="form-row">
-                           <input name="summ" type="text" class="field field--ex" placeholder="Необходимая мне сумма, грн">
+                           <input name="req_price" required type="text" class="field field--ex field--numb" min="1000" max="2000" placeholder="Необходимая мне сумма, грн">
                         </div>
                         <div class="form-row">
-                           <input name="age" type="text" class="field field--ex" placeholder="Мой возраст, лет">
-                           <input name="phone" type="text" class="field field--ex phone" placeholder="Мой телефон">
+                           <input name="age" required type="text" class="field field--ex field--age" min="18" max="100" placeholder="Мой возраст, лет">
+                           <input name="phone" required type="tel" class="field field--ex phone" placeholder="Мой телефон">
                         </div>
-                        <button type="submit" class="btn btn--action">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        <button type="submit" class="btn btn--action">Отправить запрос</button>
+                        </div>
+                        <div class="form-thanks">
+                           <h4 class="title title--thanks">
+                              Спасибо за обращение!
+                           </h4>
+                           <p class="paragraph paragraph--thanks">
+                              Мы свяжемся с Вами <br> в ближайшее время!
+                           </p>
+                        </div>
                      </form>
                   </div>
                </div>
@@ -976,38 +1008,45 @@
          <div class="wrapper">
             <div class="level">
                <div class="level-form">
-                  <form class="form">
-                     <p class="paragraph paragraph--form">
-                        Заполните заявку
-                     </p>
-                     <input type="hidden" name="formname" value="Напишешь тут нужные названия для форм">
-                     <div class="form-row">
-                        <select name="to" data-placeholder="Я хочу рефинансировать свои кредиты в">
-                           <option></option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                        </select>
-                     </div>
-                     <div class="form-row">
-                        <select name="pay" data-placeholder="Они оплачиваются" >
-                           <option></option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                           <option value="Поставишь">Пример</option>
-                        </select>
-                     </div>
-                     <div class="form-row">
-                        <input name="summ" type="text" class="field field--ex" placeholder="Необходимая мне сумма, грн">
-                     </div>
-                     <div class="form-row">
-                        <input name="age" type="text" class="field field--ex" placeholder="Мой возраст, лет">
-                        <input name="phone" type="text" class="field field--ex phone" placeholder="Мой телефон">
-                     </div>
-                     <button type="submit" class="btn btn--action">ОТПРАВИТЬ ЗАЯВКУ</button>
-                  </form>
+                  <form class="form" action="https://andriivskiy-credit.com.ua/send_email" method="post">
+                        <div class="form-box">
+                        <input type="hidden" value="Uaib2QZ0PiBTA8bIjWPwQIcLWVetZye3VT0LLnS7" name="_token">
+                        <p class="paragraph paragraph--form">
+                           Заполните заявку
+                        </p>
+                        <input type="hidden" name="formname" value="5">
+                        <div class="form-row">
+                           <select name="wishes" data-placeholder="Я хочу рефинансировать свои кредиты в">
+                              <option></option>
+                              <option value="Себе в карман">Себе в карман</option>
+                              <option value="Васе в карман">Васе в карман</option>
+                           </select>
+                        </div>
+                        <div class="form-row">
+                           <select name="they_pay" required data-placeholder="Они оплачиваются" >
+                              <option></option>
+                              <option value="Наличными">Наличными</option>
+                              <option value="Безналом">Безналом</option>
+                           </select>
+                        </div>
+                        <div class="form-row">
+                           <input name="req_price" required type="text" class="field field--ex field--numb" min="1000" max="2000" placeholder="Необходимая мне сумма, грн">
+                        </div>
+                        <div class="form-row">
+                           <input name="age" required type="text" class="field field--ex field--age" min="18" max="100" placeholder="Мой возраст, лет">
+                           <input name="phone" required type="tel" class="field field--ex phone" placeholder="Мой телефон">
+                        </div>
+                        <button type="submit" class="btn btn--action">Отправить запрос</button>
+                        </div>
+                        <div class="form-thanks">
+                           <h4 class="title title--thanks">
+                              Спасибо за обращение!
+                           </h4>
+                           <p class="paragraph paragraph--thanks">
+                              Мы свяжемся с Вами <br> в ближайшее время!
+                           </p>
+                        </div>
+                     </form>
                </div>
                <div class="level-content">
                   <div class="section-title af">
@@ -1064,7 +1103,7 @@
          <div class="wrapper">
             <div class="footer">
                <a href="/" class="link link--logo">
-                  <img src="img/logo.png" alt="logo">
+               <img src="img/logo.png" alt="logo">
                </a>
                <a href="https://freshweb.agency/?utm_source=our-site&utm_medium=newcredit2" target="_blank" class="link link--fresh"><img src="img/fresh.png" alt="fresh"></a>
                <div class="footer-phone">
