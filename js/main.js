@@ -150,9 +150,35 @@ $('.link--seo').on('click',  function(event) {
         selectSmartPositioning: false,
     });
 
-  $('.phone').mask('+38 (000) 000-00-00');
-  $('.field--numb').mask('00000000000')
-  $('.field--age').mask('000')
+  $('.phone').mask('+38 (000) 000-00-00').focus(function(event) {
+    if ($(this).val()=='') {
+       $(this).val('+38 (0')
+    }
+  }).blur(function(event) {
+    if ($(this).val()=='+38 (0') {
+       $(this).val('')
+    }
+  });
+  $('.field--numb').mask('0000000').keyup(function(event) {
+       if ($(this).val() == "") {
+        $(this).parent().removeClass('focus')
+      } else {
+        $(this).parent().addClass('focus')
+      }
+  });
+  $('.field--age').mask('00').keyup(function(event) {
+       if ($(this).val() == "") {
+        $(this).parent().removeClass('focus')
+      } else {
+        $(this).parent().addClass('focus')
+      }
+  });
+
+  // $('.field--age').keyup(function(event) {
+  //   var $val = $(this).val(),
+  //   $what = ' лет';
+  //   $(this).val($val)
+  // });
   var sliderReviews = new Swiper('.reviews-slider', {
         speed: 800,
         // effect: 'fade',
