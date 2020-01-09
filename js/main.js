@@ -267,12 +267,14 @@ $(document).on('click', '.link--show', function(event) {
 
             	_form.find('.form-box').addClass('hide')
             	_form.find('.form-thanks').addClass('show')
-
+              $('.form').not(_form).each(function(index, el) {
+                $(el).addClass('send')
+              });
                 setTimeout(function() {
                     _form.trigger("reset");
                     _form.find('select').trigger("refresh");
-                    _form.find('.form-thanks').removeClass('show')
-                    _form.find('.form-box').removeClass('hide')
+                    // _form.find('.form-thanks').removeClass('show')
+                    // _form.find('.form-box').removeClass('hide')
             		
                 }, 5000);
             }
