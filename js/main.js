@@ -265,8 +265,9 @@ $(document).on('click', '.link--show', function(event) {
             data: th,
             success: function(data) {
 
-            	_form.find('.form-box').addClass('hide')
-            	_form.find('.form-thanks').addClass('show')
+            	// _form.find('.form-box').addClass('hide')
+            	// _form.find('.form-thanks').addClass('show')
+              _form.addClass('send')
               $('.form').not(_form).each(function(index, el) {
                 $(el).addClass('send')
               });
